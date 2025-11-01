@@ -49,7 +49,7 @@ void moverCavaloComplexo(){
             printf("Cima\n");
             if (i = 2)  {
                 int k = 0
-                   while (k < 1) {
+                   while (k < 1); {
                     printf(" Direita\n");
                     k++
                     if (k = 1 ) break;
