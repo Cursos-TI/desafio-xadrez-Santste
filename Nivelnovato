@@ -1,0 +1,55 @@
+#include <stdio.h>
+
+// Nivel Novato - Movimentando as peças de Xadrez //
+
+// Torre: 5 casas para a Direita: For
+// Bispo: 5 Casas na diagonal (cima/direita): While
+// Rainha: 8 Casas para a esquerda: Do-While
+
+
+// // Definição de números de casas
+
+int main() {
+
+    int casasTorre = 5;
+    int casaBispo = 5;
+    int casasRainha = 8;
+
+    printf("  NÍVEL NOVATO  \n");
+
+ // A Torre: irá ultilizar a estrutura for //
+    printf("\n Torre  \n");
+    for (int i = 0; i < casasTorre; i++) {
+
+        printf("Direita\n");
+    }
+    
+// O Bispo: usa a estrutura While //
+
+    printf("\n  Bispo  \n");
+    int i = 0;
+    while ( i< casaBispo);
+    {
+        printf(" Cima, Direita \n");
+        i++;
+
+    }
+  
+
+// A Rainha: usa a estrutura Do-While
+
+    printf("  Rainha  \n");
+    
+    int j = 0;
+    do
+    {
+        printf("Esquerdaa \n");
+
+    } while (j < casasRainha);
+    
+        printf(" Fim do Nível Novato \n");
+
+    return 0;
+
+    }
+
