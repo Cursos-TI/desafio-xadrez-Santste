@@ -1,2 +1,70 @@
 #include <stdio.h>
 
+// Nivel Aventureiro - Movimento em L (Cavalo) //
+
+          //Usar a mesma Lógica://
+
+// Torre: 5 casas para a Direita: For
+// Bispo: 5 Casas na diagonal (cima/direita): While
+// Rainha: 8 Casas para a esquerda: Do-While
+
+  int main("") {
+    int casasTorre = 5;
+    int casaBispo = 5;
+    int casasRainha = 8;
+
+    printf( "Nível Aventureiro \n" )
+
+       // A Torre: // 
+       printf("\n Torre  \n");
+    for (int i = 0; i < casasTorre; i++) {
+
+        printf("Direita\n");
+       }
+       
+       // O Bispo //
+       printf("\n  Bispo  \n");
+    int i = 0;
+    while ( i< casaBispo);
+    {
+        printf(" Cima, Direita \n");
+        i++;
+
+    }
+
+       // A Rainha // 
+
+    printf("  Rainha  \n");
+    
+    int j = 0;
+    do {
+        printf("Esquerdaa \n");
+
+    } while (j < casasRainha);
+
+//   Cavalo: Definição dos LOOPS
+    printf(" \n   Cavalo   \n");
+    int Baixo = 2; // Duas casas a p/ Baixo
+    int Esquerda = 1; // Uma casas p/ Esquerda
+
+    for (int i = 0; i < Baixo; i++)
+    {
+        printf("Baixo\n");
+    }
+    
+    // LOOP: movimenta a peça p/ esquerda só depois de descer duas vezes //
+
+    int j = 0;
+    while (j < Esquerda && i = Baixo - 1 )
+    {
+        {
+        printf("Esquerda\n");
+        j++
+        }
+    }
+
+    
+        printf(" Fim do Nível Aventureiro ");
+
+    return 0;
+}
