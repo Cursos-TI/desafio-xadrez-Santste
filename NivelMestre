@@ -1,0 +1,85 @@
+#include <stdio.h>
+
+// Nivel Mestre - Movimentos das peças //
+
+// Torre, Rainha e Bispo: Serão movimentos recursivos (possiveis movimentos/ próximo movimento)
+// Bispo: recursao e loops aninhados 
+// Cavalo: Loops diversos com multiplas variáveis
+
+  // A Torre (Movimento recursivo):
+  
+void moverTorreRecursiva ( int casas  ){
+    if (casas <= 0 ) return;
+    printf("Direita\n");
+    moverTorreRecursiva(casas - 1 );
+
+    }
+
+   // O Bispo: Movimento recursivo mais Loops alinhados
+
+void moverBiposRecursivo(int vertical, int horizontal){
+    if (vertical <= 0 || horizontal <=0 ) return;
+
+    for (int i = 0; i < vertical; i++){
+        for (int j = 0; i < horizontal; j++){
+            printf(" Cima, Direita\n");
+            break; // vai imprimir apenas uma direção a cada passo
+
+        }
+    }
+moverBiposRecursivo( vertical - 1, horizontal - 1);
+
+}
+    //A Rainha: movimento Recursivo //
+
+void moverRainhaRecursiva(int casas) {
+    if (casas <=0) return;
+    printf("Esquerda\n");
+    moverRainhaRecursiva (casas - 1);
+
+    
+}
+
+  // O Cavalo: Loops complexo com multiplas variáveis e condições.
+
+void moverCavaloComplexo(){
+    printf(" \n  Cavalo  \n");
+    for (int i = 1, j = 1; i <= 2; i++, j++) {
+        if ( i <= 2){
+            printf("Cima\n");
+            if (i = 2)  {
+                int k = 0
+                   while (k < 1) {
+                    printf(" Direita\n");
+                    k++
+                    if (k = 1 ) break;
+                }
+            }
+        }  else {
+            continue; // controle do fluxo 
+        }
+    }    
+}
+
+int main() {
+    int casasTorre = 5;
+    int casaBispo = 5;
+    int casasRainha = 8;
+
+    printf("  Nivel Mestre  \n");
+
+
+    printf(" Torre \n");
+    moverTorreRecursiva(casasTorre);
+
+    printf("  Bispo  \n");
+    moverBiposRecursivo(casaBispo, casaBispo);
+
+    printf("  Rainha  \n");
+    moverRainhaRecursiva(casasRainha);
+
+    moverCavaloComplexo();
+
+    printf("  FIM DO NIVEL MESTRE  \n");
+
+}
